@@ -16,11 +16,11 @@ def line (deli)
     end
 end 
 
-def take_a_number(deli_line, name)
-  deli_line.push(name) 
-  index = deli_line.length
-  puts "Welcome, #{name}. You are number #{index} in line."
-end
+#def take_a_number(deli_line, name)
+ # deli_line.push(name) 
+  #index = deli_line.length
+  # puts "Welcome, #{name}. You are number #{index} in line."
+# end
 
 def now_serving(deli_line)
   firstname = deli_line.shift
@@ -30,7 +30,13 @@ def now_serving(deli_line)
     puts "Currently serving #{firstname}."
   end
 end
-    
+ 
+index =0    
+def take_a_number(deli_line)
+  index += 1
+  deli_line.push(index)
+  return index 
+end
   
   
   
